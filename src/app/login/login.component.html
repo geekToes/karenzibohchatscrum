@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <h2>Sign in to your account</h2>
+    <h6>{{userSignUpForm.value | json}}</h6>
+    <form #userSignUpForm="ngForm" action="" method="POST">
+        <div class="form-group row">
+            <label class="col-1 col-form-label">Email</label>
+            <input class="col-7 form-control border rounded" type="email" name="email" id="email" ngModel>
+        </div>
+        <div class="form-group row">
+            <label class="col-1 col-form-label">Password</label>
+            <input class="col-7 form-control border rounded" type="password" name="password" id="password" ngModel>
+        </div>
+        <div class="form-group row">
+            <label class="col-1 col-form-label">Project Name</label>
+            <input class="col-7 form-control border rounded" type="text" name="projectname" id="projectname" ngModel>
+        </div>
+        <button name ="submit"class="col-2 form-control border  rounded btn btn-primary">Login</button>    
+    </form>
+</div>
